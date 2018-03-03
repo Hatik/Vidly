@@ -18,12 +18,14 @@ namespace Vidly.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<Vidly.Models.Customer> Customers { get; set; }
+        public System.Data.Entity.DbSet<Customer> Customers { get; set; }
 
-        public System.Data.Entity.DbSet<Vidly.Models.Movie> Movies { get; set; }
+        public System.Data.Entity.DbSet<Movie> Movies { get; set; }
 
-        public System.Data.Entity.DbSet<Vidly.Models.MembershipType> MembershipTypes { get; set; }
+        public System.Data.Entity.DbSet<MembershipType> MembershipTypes { get; set; }
 
-        public System.Data.Entity.DbSet<Vidly.Models.Genre> Genres { get; set; }
+        public System.Data.Entity.DbSet<Genre> Genres { get; set; }
+
+        public System.Data.Entity.DbSet<Rental> Rentals { get; set; }
     }
 }
